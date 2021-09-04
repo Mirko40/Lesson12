@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="form">
+        <div class="form__container">
+
+
+            <div class="tabs">
+                <div class="tab">
+                    <input type="radio" id="tab1" name="tab-group" checked>
+                    <label for="tab1" class="tab-title">Sign in</label>
+                    <section class="tab-content">
+                        <div class="tab-form">
+                            <label for="login">
+                                <div class="form--text">Username</div>
+                            </label>
+
+                            <input type="text" name="login" required autocomplete="off">
+
+                            <label for="psw">
+                                <div class="form--text">Password</div>
+                            </label>
+                            <input type="password" name="psw" required>
+                            <div class="sign">
+                                <input type="checkbox" checked="checked" name="remember">Keep me signed in
+                            </div>
+                            <button type="submit" class="btn--sign">Sign in</button>
+                            <div class="text--footer">
+                                <div class="text--forgot">Forgot password</div>
+                                <div class="text--create"> Create an account</div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="radio" id="tab2" name="tab-group">
+                    <label for="tab2" class="tab-title">Join us</label>
+                    <section class="tab-content">
+                        <div class="tab-form">
+                            <label for="login">
+                                <div class="form--text">Username</div>
+                            </label>
+                            <input type="text" name="login" required autocomplete="off">
+
+                            <label for="psw">
+                                <div class="form--text">Password</div>
+                            </label>
+                            <input type="password" name="psw" required>
+
+                            <label for="psw-repeat">
+                                <div class="form--text">Repeat Password</div>
+                            </label>
+                            <input type="password" name="psw-repeat" required>
+                            <button type="submit" class="btn--sign">Join us</button>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+</body>
+
+</html>

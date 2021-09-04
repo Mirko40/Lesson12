@@ -1,0 +1,138 @@
+@-webkit-keyframes autofill {
+  to {
+    color: inherit;
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+} 
+body {
+    background: #252525;
+  }
+  .form {
+    background-color: #E5EEEE;  
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content:center;
+    /* border: 2px solid red; */
+  }
+ 
+  .form__container {
+    width: 400px;
+    height: 495px;
+    background-image: url("Foto/Shape\ 1.png");
+    background-position:center;
+    /* border: 2px solid red; */
+    box-shadow: 0 20px 10px 0 rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: left;
+    }
+     .tabs {
+      position: relative; /* Относительное позиционирование */
+      
+      }
+    .tab-title {
+      display: block;
+      margin-left:80px;
+    }
+     .tab, .tab-title {
+      display: inline-block; /* Выстраиваем по горизонтали */
+     }
+     .tab input[type="radio"] { display: none; }
+     .tab-title {
+      margin-top: 50px;
+      font-size: 18px;
+color: #e1c2f1;
+font-weight: 700;
+font-family: "Quicksand";
+     }
+     .tab-content {
+      position: absolute;
+      padding: 10px; /* Поля вокруг текста */
+      left: 70px;
+      top:90px;
+     
+      display: none; /* Прячем вкладку */
+     }
+     .tab-form{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: left;
+      width: 260px;
+      
+          }
+        .form--text{
+          font-size: 16px;
+          color: #fbf6e4;
+          font-weight: 700;
+          font-family: "Quicksand";
+margin-bottom: 10px;
+margin-top: 18px;
+        }
+     .tab :checked + .tab-title {
+      position: relative;
+     border-bottom: 2px solid red;
+     z-index: 1;
+     
+     }
+     .tab :checked ~ .tab-content {
+      display: block; /* Показываем активную вкладку */
+     }
+     input[type=text]:focus, input[type=password]:focus {
+      outline: none;
+      }
+      input[type=text], input[type=password] {
+        background: transparent;
+        border: 2px solid rgba(191,185,204,0.54);
+        width: 250px;
+        height: 40px; 
+        font-size: 16px;
+          color: #fbf6e4;
+          font-weight: 700;
+          font-family: "Quicksand";
+      }
+    .text--footer {
+      width: 260px;
+      margin-top:32px;
+      font-size: 13px;
+color: #b9b9cc;
+font-weight: 400;
+font-family: "Quicksand";
+display: flex;
+align-self:center;
+ justify-content:space-between;
+ opacity: 0.7;
+ 
+ }
+    .text--forgot, .text--create {
+      border-bottom: 2px solid rgba(191,185,204,0.54);
+
+    }
+    .sign {
+      margin-top:20px ;
+      font-size: 13px;
+  color: #fbf6e4;
+  font-weight: 700;
+  font-family: "Quicksand";
+    }
+    .btn--sign {
+      background-color: #23AE92;
+      width: 260px;
+      height: 45px;
+      margin-top: 40px; 
+      font-size: 18px;
+  color: #fbf6e4;
+  font-weight: 700;
+  font-family: "Quicksand";
+     }
