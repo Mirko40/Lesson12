@@ -76,8 +76,10 @@ font-family: "Raleway", sans-serif;
              }
           span input[type=text] {
             width: 500px;
-            height: 250px; 
-            text-align: top;  
+            height: 250px;
+          }
+          span input[type=text]::placeholder {
+           transform: translateY(-100px) translateY(50%);
           }
     .main--address {
         width: 500px;
