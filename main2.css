@@ -71,16 +71,31 @@ font-family: "Raleway", sans-serif;
         input[type=text]:focus {
             background-color:  #00c4c4;
             outline: none;
-            border-left: 2px solid #355B82;
+            border-left: 5px solid #355B82;
             color:#F2FCFC;
+            width: 495px;
              }
-          span input[type=text] {
+          textarea {
+            font-size: 17px;
+            line-height: 25px;
+            color: #ffffff;
+            font-weight: 300;
+            font-family: "Raleway", sans-serif;
+            outline: none; 
+            border: none;
+            background: rgba(0, 196, 196, 0.6); 
             width: 500px;
             height: 250px;
+            resize: none;
+            }
+          textarea:focus {
+            background-color:  #00c4c4;
+            outline: none;
+            border-left: 5px solid #355B82;
+            color:#F2FCFC;
+            width: 495px;
           }
-          span input[type=text]::placeholder {
-           transform: translateY(-100px) translateY(50%);
-          }
+          
     .main--address {
         width: 500px;
         height: 450px;
@@ -94,12 +109,27 @@ font-family: "Raleway";
     .main--address span {
         font-weight: 300;  
     }
+    .form--submit {
+  background-color: #f72b3b;
+  width: 265px;
+  height: 50px;
+  margin-top: 40px;
+ 
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  
+    }
 
     .contact__footer {
         width: 1500px;
         height: 90px;
         /* border: 2px solid red; */
-        margin-top:122px ;
+        margin-top:36px ;
         background-color: #262626;
         display:flex;
         justify-content: space-between;
