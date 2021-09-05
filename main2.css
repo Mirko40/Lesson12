@@ -34,19 +34,19 @@ font-family: "Raleway", sans-serif;
         text-align: center;
     }
     .contact__main{
-        margin-top: 62px;
+        margin-top: 65px;
         width: 1170px;
         height: 450px; 
         border: 2px solid red;
         display:flex;
         justify-content: space-between;
     }
-    .main__form {
+    .main--form {
         width: 500px;
         height: 450px;
         border: 2px solid red;
     }
-    .main__address {
+    .main--address {
         width: 500px;
         height: 450px;
         border: 2px solid red;
@@ -54,7 +54,41 @@ font-family: "Raleway", sans-serif;
     .contact__footer {
         width: 1500px;
         height: 90px;
-        border: 2px solid red;
-        margin-top:120px ;
+        /* border: 2px solid red; */
+        margin-top:122px ;
+        background-color: #262626;
+        display:flex;
+        justify-content: space-between;
+        align-self: center;
+    align-items:center;
     }
+    .footer--left {
+        font-size: 16px;
+line-height: 25px;
+color: #b9b9b9;
+font-weight: 300;
+font-family: "Raleway", sans-serif;
+margin-left: 165px;
+    }
+    .footer--logo {
+        font-size: 25px;
+line-height: 25px;
+color: #b9b9b9;
+font-weight: 400;
+font-family: "Pacifico", sans-serif;
+/* border: 2px solid red; */
+transform: translate(-50%,0);
+    }
+    .footer--right {
+        font-size: 15px;
+line-height: 25px;
+color: #b9b9b9;
+font-weight: 300;
+font-family: "Raleway", sans-serif;
+margin-right: 165px;
+    }
+    .footer--right span {
+        color:#FF2B58;
+        font-weight: bold;
+}
 
