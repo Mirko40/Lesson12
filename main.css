@@ -1,14 +1,3 @@
-@-webkit-keyframes autofill {
-  to {
-    color: inherit;
-    background: transparent;
-  }
-}
-
-input:-webkit-autofill {
-  -webkit-animation-name: autofill;
-  -webkit-animation-fill-mode: both;
-} 
 body {
     background: #252525;
   }
@@ -38,7 +27,7 @@ body {
     justify-content: left;
     }
      .tabs {
-      position: relative; /* Относительное позиционирование */
+      position: relative;
       
       }
     .tab-title {
@@ -46,7 +35,7 @@ body {
       margin-left:80px;
     }
      .tab, .tab-title {
-      display: inline-block; /* Выстраиваем по горизонтали */
+      display: inline-block;
      }
      .tab input[type="radio"] { display: none; }
      .tab-title {
@@ -58,7 +47,7 @@ font-family: "Quicksand";
      }
      .tab-content {
       position: absolute;
-      padding: 10px; /* Поля вокруг текста */
+      padding: 10px;
       left: 70px;
       top:90px;
      
