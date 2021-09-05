@@ -37,7 +37,7 @@ font-family: "Raleway", sans-serif;
         margin-top: 65px;
         width: 1170px;
         height: 450px; 
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display:flex;
         justify-content: space-between;
     }
@@ -49,8 +49,17 @@ font-family: "Raleway", sans-serif;
     .main--address {
         width: 500px;
         height: 450px;
-        border: 2px solid red;
+        /* border: 2px solid red; */
+        font-size: 17px;
+line-height: 25px;
+color: #262626;
+font-weight: 700;
+font-family: "Raleway";
     }
+    .main--address span {
+        font-weight: 300;  
+    }
+
     .contact__footer {
         width: 1500px;
         height: 90px;
